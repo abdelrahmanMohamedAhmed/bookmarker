@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    </head>
+    <body >
+        
+     
+    <div class="mx-auto w-75 ">
+        <h2 class="text-secondary my-3 fw-bolder">Bookmarker</h2>
+        <div class="content-parent border-top border-bottom py-5  border-1 ">
+            <div class="form w-75 mx-auto text-center py-5 bg-light">
+                <h3 class="">Bookmark your favourite sites</h3>
+                <label for="siteName" class="fw-bold " > Site Name</label>
+                <input type="text" id="siteName" class=" mb-4 form-control" placeholder="site name">
+                <label for="siteUrl" class="fw-bold" > Site URL</label>
+                <input type="text" id="siteUrl" class=" mb-4 form-control" placeholder="site URL">
+                <button class="btn btn-outline-primary " onclick="addSite()"> Submit</button>
+            </div>  
+            <div class="saving w-75 mx-auto mt-5 ">
+                    <input type="text" class="form-control" placeholder="search by name" oninput="searchSite(this.value)">
+                    <table class="table mt-3">
+                        <tbody class="text-center" id="tableBody">
+                          
+                    </table>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
